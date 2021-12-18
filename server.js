@@ -12,6 +12,10 @@ app.get('/api/information', (req,res) => {
     res.json({message:'Hello World novamente!'});
 });
 
+app.get('', (req, res) => {
+   res.sendFile(__dirname + '/index.html')
+});
+
 port = 3000;
 
 ///Listando porta do server/rodar
@@ -22,3 +26,5 @@ app.listen(port,'127.0.0.1',()=>{
 
 
 //npm start server.js
+//install bootstrap  
+/// npm install bootstrap / yarn add bootstrap
